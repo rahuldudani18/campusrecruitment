@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Campus Recruitment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .navbar-container {
+            width: 60%;
+            height: 70px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #243642;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .navbar {
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .job-list {
+            max-height: calc(100vh - 150px);
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+        .job-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .company-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .job-details {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .apply-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .apply-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#profile">Profile</a>
+            <a href="#settings">Settings</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Job Offers</h1>
+        <div class="job-list">
+            <!-- Job Card 1 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/tcs.com" alt="TCS Logo" class="company-logo">
+                <div class="company-name">Tata Consultancy Services</div>
+                <div class="job-title">Software Engineer</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 5,00,000 - 8,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/infosys.com" alt="Infosys Logo" class="company-logo">
+                <div class="company-name">Infosys</div>
+                <div class="job-title">Data Scientist</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 7,00,000 - 12,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/wipro.com" alt="Wipro Logo" class="company-logo">
+                <div class="company-name">Wipro</div>
+                <div class="job-title">Product Manager</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 10,00,000 - 15,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 4 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/hcl.com" alt="HCL Logo" class="company-logo">
+                <div class="company-name">HCL Technologies</div>
+                <div class="job-title">Cloud Architect</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Noida, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 12,00,000 - 18,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 5 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/techmahindra.com" alt="Tech Mahindra Logo" class="company-logo">
+                <div class="company-name">Tech Mahindra</div>
+                <div class="job-title">UI/UX Designer</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 6,00,000 - 10,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 6 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/cognizant.com" alt="Cognizant Logo" class="company-logo">
+                <div class="company-name">Cognizant</div>
+                <div class="job-title">Business Analyst</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 8,00,000 - 13,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 7 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/capgemini.com" alt="Capgemini Logo" class="company-logo">
+                <div class="company-name">Capgemini</div>
+                <div class="job-title">DevOps Engineer</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Gurgaon, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 9,00,000 - 14,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 8 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/accenture.com" alt="Accenture Logo" class="company-logo">
+                <div class="company-name">Accenture</div>
+                <div class="job-title">Cybersecurity Analyst</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 7,50,000 - 12,50,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 9 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/oracle.com" alt="Oracle Logo" class="company-logo">
+                <div class="company-name">Oracle</div>
+                <div class="job-title">Database Administrator</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 11,00,000 - 16,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job Card 10 -->
+            <div class="job-card">
+                <img src="https://logo.clearbit.com/ibm.com" alt="IBM Logo" class="company-logo">
+                <div class="company-name">IBM</div>
+                <div class="job-title">AI Research Scientist</div>
+                <div class="job-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    <p><i class="fas fa-rupee-sign"></i> 15,00,000 - 25,00,000</p>
+                    <p><i class="fas fa-clock"></i> Full-time</p>
+                </div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
